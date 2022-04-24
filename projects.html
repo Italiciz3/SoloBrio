@@ -1,0 +1,71 @@
+<!DOCTYPE html> <!-- WHERE YOUR PROJECTS ARE ORGANIZED AND NAMED -->
+<html>
+<link rel="stylesheet" href="styles_2.css">
+<head>
+
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<div class="background-meme">
+	<div class="navbar"></div>
+
+	<title>Soli Brio Projects</title>
+
+</head>
+<body>
+
+
+
+</div>
+	<h1 class="temptext">No Projects Started</h1>
+	<h2 class="title_tl">Soli Brio</h2>
+
+<div class="button_tr">
+	<form>
+	<button class="newproj" id="Create-P" type="button" onclick="titlingfunc()">Start New Project</button>
+	</form>
+</div>
+
+<div class="newprojtitle" id="initiate_proj">
+	<form>
+    <label class="demand_title">Enter Title for Project</label>
+    <input class="projnameinp" type="text" id="user_title">
+    <input type="submit" value="Submit" onsubmit="titlingfunc()" >
+</form>
+
+</div>
+projnameinp
+demand_title
+
+<div>
+	<div class="login">
+		<button class="user_log" onclick="loginfunc()">Login or Register</button>
+	</div>
+</div>
+<script>
+
+	document.getElementById("initiate_proj").style.display = "none";
+
+	
+
+
+	function loginfunc() {
+		window.location.href = "login.html";
+	}
+
+	function titlingfunc() {
+		document.getElementById("initiate_proj").style.display = "block";
+		var input = document.getElementById("projnameinp").value;
+		alert(input);
+	
+		}
+	
+
+
+
+	
+
+
+	
+</script>
+</body>
+</html>
